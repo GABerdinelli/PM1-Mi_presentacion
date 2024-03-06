@@ -1,0 +1,140 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-size: 2em;
+    color: darkred;
+}
+
+.logo{
+    width: 200px;
+    width: 200px;
+}
+
+.cards{
+    border: 2px solid brown;
+    width: fit-content;
+    padding: 1em 1em 1em 1em;
+    border-radius: 5%;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+	text-align: center;
+}
+
+.cards:hover{
+    background-color: rgb(223, 255, 80);
+}
+
+#principal{
+    font-size: 3em;
+}
+
+#titulos{
+    /* viewport width */
+    width: 70vw;
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align-last: center;
+}
+
+#cards-container{
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+	margin-bottom: 1.5am;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#actividad{
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+	margin-bottom: 1.5am;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#nueva-actividad {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#nueva-actividad form {
+    display: flex;
+    flex-direction: column;
+}
+
+#nueva-actividad label {
+    margin-bottom: 5px;
+}
+
+#nueva-actividad input,
+#nueva-actividad textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#nueva-actividad button {
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#actividades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#actividades .tarjeta {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#actividades .tarjeta img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#actividades .tarjeta h3 {
+    margin-bottom: 5px;
+}
+
+#actividades .tarjeta p {
+    margin-bottom: 0;
+}

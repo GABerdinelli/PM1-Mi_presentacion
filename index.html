@@ -3,49 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <title>Estilos en HTML</title>
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <div id="titulos">
+            <h1 class="title" id="principal">Esta es mi Homework M1 - Clase 01</h1>
+        </div>
+    </header>
+    <main>
+        <article id="titulos">
+            <h3 class="title">Sobre Mi</h3>
+			<br/>
+            <p>Me llamo Gabriel Alejandro Berdinelli</p>
+			<br/>
+			<p>Soy un apasionado de la tecnología y el desarrollo web. Me encanta aprender cosas nuevas y siempre estoy buscando nuevos desafíos. Me considero una persona creativa y proactiva, con un gran interés por el diseño y la UX.</p>
+			<br/>
+            <p>Si bien tengo conocimiento de Full Stack, me gusta mucho más desarrollar aplicaciones Backend también</p>
+        </article>
 
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy un apasionado de la tecnología y el desarrollo web. Me encanta aprender cosas nuevas y compartir mis conocimientos con los demás.</p>
-        <img src="imagen-personal.jpg" alt="Imagen personal">
-      </section>
-      
-    <section id="mis-tecnologias">
-        <h2>Mis Tecnologías Favoritas</h2>
-        <div class="tarjetas">
-          <div class="tarjeta">
-            <img src="logo-html.png" alt="HTML">
-            <h3>HTML</h3>
-          </div>
-          <div class="tarjeta">
-            <img src="logo-css.png" alt="CSS">
-            <h3>CSS</h3>
-          </div>
-          <div class="tarjeta">
-            <img src="logo-javascript.png" alt="JavaScript">
-            <h3>JavaScript</h3>
-          </div>
-          </div>
-      </section>
-      
-      <section id="mis-actividades">
-        <h2>Mis Actividades Favoritas</h2>
-        <form id="formulario-actividad">
-          <label for="titulo">Título:</label>
-          <input type="text" id="titulo" name="titulo">
-          <label for="descripcion">Descripción:</label>
-          <textarea id="descripcion" name="descripcion"></textarea>
-          <label for="imagen">Imagen:</label>
-          <input type="url" id="imagen" name="imagen">
-          <button type="submit">Agregar Actividad</button>
-        </form>
-        <div class="contenedor-actividades"></div>
-      </section>    
+        <article>
+            <div id="cards-container">
+
+                <div class="cards">
+                    <h4 class="title">HTML</h4>
+                    <img src="img\html.png" class="logo"/>
+                </div>
+                <div class="cards">
+                    <h4 class="title">CSS</h4>
+                    <img src="img\css.png" class="logo"/>
+                </div>
+                <div class="cards">
+                    <h4 class="title">Javascript</h4>
+                    <img src="img\js.png" alt="Javascript" class="logo"/>
+                
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+		<div id="actividad">
+			<h1>Mis actividades favoritas</h1>
+			<section id="nueva-actividad">
+				<h2>Agregar nueva actividad</h2></br>
+				<form action="#">
+					<label for="titulo">Título:</label>
+					<input type="text" id="titulo" name="titulo" required>
+					<label for="descripcion">Descripción:</label>
+					<textarea id="descripcion" name="descripcion" required></textarea>
+					<label for="imagen">URL de imagen:</label>
+					<input type="url" id="imagen" name="imagen" required>
+					<button type="submit">Agregar</button>
+				</form>
+			</section>
+			<section id="actividades">
+				<h2>Mis actividades</h2>
+				</section>
+			<script src="scripts/script.js"></script>
+		</div>
+	</footer>
 </body>
 </html>
