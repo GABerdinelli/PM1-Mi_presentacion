@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/reset.css" />
-    <title>Estilos en HTML</title>
+    <title>Homework M1</title>
 </head>
 <body>
     <header>
         <div id="titulos">
-            <h1 class="title" id="principal">Esta es mi Homework M1 - Clase 01</h1>
+            <h1 class="title" id="principal">Esta es mi Homework M1</h1>
         </div>
     </header>
-    <main>
-        <article id="titulos">
+    <main>        
+        <article id="titulos" class="animated-text">
             <h3 class="title">Sobre Mi</h3>
 			<br/>
-            <p>Me llamo Gabriel Alejandro Berdinelli</p>
+            <p>Me llamo <b>Gabriel Alejandro Berdinelli</b></p>
 			<br/>
-			<p>Soy un apasionado de la tecnología y el desarrollo web. Me encanta aprender cosas nuevas y siempre estoy buscando nuevos desafíos. Me considero una persona creativa y proactiva, con un gran interés por el diseño y la UX.</p>
+			<p>Soy un apasionado de la tecnología y el <b>Desarrollo Web</b>. Me encanta aprender cosas nuevas y siempre estoy buscando nuevos desafíos. Me considero una persona creativa y proactiva, con un gran interés por el diseño y la UX.</p>
 			<br/>
-            <p>Si bien tengo conocimiento de Full Stack, me gusta mucho más desarrollar aplicaciones Backend también</p>
+            <p>Si bien tengo conocimiento de <b>Full Stack</b>, me gusta mucho más desarrollar <b>aplicaciones Backend</b> también</p>
         </article>
-
         <article>
             <div id="cards-container">
-
                 <div class="cards">
                     <h4 class="title">HTML</h4>
                     <img src="img\html.png" class="logo"/>
@@ -37,33 +35,22 @@
                 </div>
                 <div class="cards">
                     <h4 class="title">Javascript</h4>
-                    <img src="img\js.png" alt="Javascript" class="logo"/>
-                
+                    <img src="img\js.png" alt="Javascript" class="logo"/>                
                 </div>
             </article>
         </div>
     </main>
-
     <footer>
-		<div id="actividad">
-			<h1>Mis actividades favoritas</h1>
-			<section id="nueva-actividad">
-				<h2>Agregar nueva actividad</h2></br>
-				<form action="#">
-					<label for="titulo">Título:</label>
-					<input type="text" id="titulo" name="titulo" required>
-					<label for="descripcion">Descripción:</label>
-					<textarea id="descripcion" name="descripcion" required></textarea>
-					<label for="imagen">URL de imagen:</label>
-					<input type="url" id="imagen" name="imagen" required>
-					<button type="submit">Agregar</button>
-				</form>
-			</section>
-			<section id="actividades">
-				<h2>Mis actividades</h2>
-				</section>
-			<script src="scripts/script.js"></script>
-		</div>
+        <div class="container">
+            <div class="form-container">
+                <input id="titleInput" type="text" placeholder="Título">
+                <input id="descriptionInput" type="text" placeholder="Descripción">
+                <input id="imgUrlInput" type="text" placeholder="URL de la imagen">
+                <button id="addActivityBtn">Agregar Actividad</button>
+            </div>
+            <div class="cards-container" id="container"></div>
+        </div>
 	</footer>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
