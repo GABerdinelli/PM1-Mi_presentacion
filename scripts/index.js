@@ -116,3 +116,9 @@ function handleDeleteButtonClick(event) {
 
 // Implementar la funcionalidad de eliminar tarjetas del contenedor al hacer clic sobre ellas
 document.addEventListener('click', handleDeleteButtonClick);
+
+
+module.exports = {
+    Activity, 
+    Repository,
+};
